@@ -1,0 +1,529 @@
+{
+  "CarChoices": [],
+  "IncludeOutputSettingsInProfile": false,
+  "UnmuteEffectsAfterSimhubRestart": true,
+  "EffectsContainers": [
+    {
+      "ContainerType": "ABSActiveEffectContainer",
+      "IsEnabled": true,
+      "Gain": 17.142857142857068,
+      "ContainerId": "c732a958-ecf5-477b-ac3c-e0b5f39fff88",
+      "Filter": {
+        "Duration": 80,
+        "FilterType": "PulseFilter"
+      },
+      "Output": {
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "SingleToneOutput"
+      }
+    },
+    {
+      "ContainerType": "RPMSoundEffectContainer",
+      "IsEnabled": true,
+      "Gain": 9.0476190476192642,
+      "PitchOffset": 5,
+      "CutOff": 185.0,
+      "LoadSensitivity": 80.0,
+      "ContainerId": "9b9c34f8-e1e7-4e52-bdb3-2275642ecfcb",
+      "Filter": null,
+      "Output": {
+        "EngineMode": 1,
+        "UseBank1": true,
+        "UseBank3": false,
+        "OutputType": "RpmBankOutput"
+      }
+    },
+    {
+      "ContainerType": "RPMContainer",
+      "IsEnabled": true,
+      "Gain": 10.476190476190455,
+      "ContainerId": "da0fdb02-6deb-45d5-9286-8529a7733d32",
+      "Filter": {
+        "ControlPoints": [
+          "5;88",
+          "18;92",
+          "50.2958579881657;42.8633188412877",
+          "93.491124260355;49.3358897953202",
+          "100;58",
+          "69.3491124260355;31.989399638513"
+        ],
+        "CurveFitting": 0,
+        "FilterType": "SplineFilter"
+      },
+      "Output": {
+        "UseHighFrequency": false,
+        "HighFrequency": 55,
+        "WhiteNoise": 40,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": true,
+        "UsePrehemptiveMode": false,
+        "Frequency": 30,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "GearEffectContainer",
+      "IsEnabled": true,
+      "Gain": 84.761904761904631,
+      "ModulateGainUsingRpms": true,
+      "MaxFeedbackRpmPercent": 90,
+      "MinFeedbackRpmPercent": 50,
+      "GearMode": 2,
+      "AlwaysIgnoreNeutral": false,
+      "IgnoreNeutral": true,
+      "NeutralDebouningTime": 200.0,
+      "EngagingDebouningTime": 100.0,
+      "ContainerId": "d41e6551-86f6-4b86-90aa-001c6374a359",
+      "Filter": {
+        "Duration": 80,
+        "FilterType": "PulseFilter"
+      },
+      "Output": {
+        "UsePrehemptiveMode": false,
+        "Frequency": 28,
+        "OutputType": "SingleToneOutput"
+      }
+    },
+    {
+      "ContainerType": "GearMissedContainer",
+      "IsEnabled": false,
+      "Gain": 100.0,
+      "Gear1": {},
+      "Gear2": {},
+      "Gear3": {},
+      "Gear4": {},
+      "Gear5": {},
+      "Gear6": {},
+      "Gear7": {},
+      "GearR": {},
+      "ContainerId": "d0a7342b-acaa-4e53-a6b2-3b804ba46b05",
+      "Filter": {
+        "GammaValue": 1.2,
+        "FilterType": "SimpleGammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 50,
+        "WhiteNoise": 10,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "WheelsVibrationContainer",
+      "IsEnabled": true,
+      "Gain": 11.428571428571265,
+      "AutocalibrationMax": 100.0,
+      "UseAutoThreshold": true,
+      "AutoThresholdValue": 50.0,
+      "ContainerId": "25ad235f-3d06-40d7-a172-6149eabd383d",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.0,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": false,
+        "HighFrequency": 44,
+        "WhiteNoise": 35,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 30,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "ImpactEffectContainer",
+      "IsEnabled": true,
+      "Gain": 14.047619047618454,
+      "Sensitivity": 95.0,
+      "ContainerId": "3ee4e808-c34a-433a-824d-7c4daeded213",
+      "Filter": {
+        "GammaValue": 1.0,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 45,
+        "WhiteNoise": 40,
+        "UseWhiteNoise": true,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 35,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "WheelsImpactContainer",
+      "IsEnabled": true,
+      "Gain": 15.280952380952709,
+      "AutocalibrationMin": 50.0,
+      "ContainerId": "f457e806-79ba-48a3-8167-b762ab12f6ec",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.0,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 45,
+        "WhiteNoise": 40,
+        "UseWhiteNoise": true,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 35,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "RoadTextureContainer",
+      "IsEnabled": true,
+      "Gain": 12.436904761905058,
+      "Grain": 50.0,
+      "LowSpeed": 5,
+      "HighSpeed": 120,
+      "ContainerId": "4b00c42d-3935-4498-a396-1e4e7706d226",
+      "Filter": {
+        "GammaValue": 1.0,
+        "FilterType": "SimpleGammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 45,
+        "WhiteNoise": 45,
+        "UseWhiteNoise": true,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 35,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "SpeedContainer",
+      "IsEnabled": true,
+      "Gain": 9.10952380952405,
+      "LowSpeed": 5,
+      "HighSpeed": 120,
+      "AutoMaxSpeed": true,
+      "MaxSpeedPercent": 90.0,
+      "ContainerId": "84521a16-5147-4d51-b59a-847a4c2ddfc4",
+      "Filter": {
+        "GammaValue": 1.0,
+        "FilterType": "SimpleGammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 45,
+        "WhiteNoise": 35,
+        "UseWhiteNoise": true,
+        "FrequencyBasedOnPreFilter": true,
+        "UsePrehemptiveMode": false,
+        "Frequency": 30,
+        "DisableOutput": true,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "LocalizedSpeedContainer",
+      "IsEnabled": false,
+      "Gain": 29.847619047619705,
+      "LowSpeed": 5,
+      "HighSpeed": 120,
+      "AutoMaxSpeed": true,
+      "MaxSpeedPercent": 90.0,
+      "OnlyInTurns": false,
+      "Curvature": 50,
+      "ContainerId": "6c1c8d58-d4d5-4f97-9432-2ac12a6ea66d",
+      "AggregationMode": "Mono",
+      "Filter": {
+        "GammaValue": 1.0,
+        "FilterType": "SimpleGammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 60,
+        "WhiteNoise": 50,
+        "UseWhiteNoise": true,
+        "FrequencyBasedOnPreFilter": true,
+        "UsePrehemptiveMode": false,
+        "Frequency": 40,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "WheelsRumbleContainer",
+      "IsEnabled": true,
+      "Gain": 15.71428571428565,
+      "MaxEffectSpeed": 80.0,
+      "RampDownDelay": 1000.0,
+      "RampDownTo": 25.0,
+      "UseVibrationRampDown": true,
+      "Localization": 50.0,
+      "ContainerId": "53950e7a-b19d-472d-83a4-6c88b60e391e",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.0,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": false,
+        "HighFrequency": 50,
+        "WhiteNoise": 10,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "TCActiveEffectContainer",
+      "IsEnabled": false,
+      "Gain": 100.0,
+      "ContainerId": "0bbbd87a-22d6-4846-a6ca-39e47be856c3",
+      "Filter": {
+        "Duration": 80,
+        "FilterType": "PulseFilter"
+      },
+      "Output": {
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "SingleToneOutput"
+      }
+    },
+    {
+      "ContainerType": "TractionLossContainer",
+      "IsEnabled": false,
+      "Gain": 100.0,
+      "ContainerId": "a2a76785-282b-4e28-8751-25441cdc66a4",
+      "AggregationMode": "Mono",
+      "Filter": {
+        "GammaValue": 0.99999999999999933,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 90,
+        "WhiteNoise": 2000,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 28,
+        "Delay": 5,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "WheelsLockContainer",
+      "IsEnabled": false,
+      "Gain": 100.0,
+      "IsLock": true,
+      "UseLegacyIracingAlgorythm": false,
+      "LockSensibility": 50.0,
+      "BrakeFilter": 20,
+      "ContainerId": "9717fd00-18f7-4719-910c-8340ebda0ed0",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.5,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": false,
+        "HighFrequency": 60,
+        "WhiteNoise": 70,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 40,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "WheelsSlipContainer",
+      "IsEnabled": false,
+      "Gain": 99.983333333333334,
+      "BrakeFilter": 10,
+      "MuteWhenLockEffectIsActive": false,
+      "ThrottleFilter": 10,
+      "UseBrakeFilter": false,
+      "UseThrottleFilter": false,
+      "UseLegacyIracingAlgorythm": false,
+      "ContainerId": "fc9a6142-dc39-48e2-8164-2151824b5189",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.2,
+        "InputGain": 120.0,
+        "MinimumForce": 0,
+        "Threshold": 5,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 70,
+        "WhiteNoise": 24,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": true,
+        "UsePrehemptiveMode": false,
+        "Frequency": 49,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "WheelsSpinAndLockContainer",
+      "IsEnabled": false,
+      "Gain": 100.0,
+      "ContainerId": "01b4c362-b0cf-4605-b355-80f6af7dda1e",
+      "Filter": {
+        "GammaValue": 1.9999999999999998,
+        "InputGain": 100.0,
+        "MinimumForce": 10,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": true,
+        "HighFrequency": 50,
+        "WhiteNoise": 15,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "CustomEffectContainer",
+      "IsEnabled": true,
+      "Gain": 100.0,
+      "Description": "Custom-Slip-Calc",
+      "FrontLeftFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_FL] * 100"
+      },
+      "FrontRightFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_FR] * 100"
+      },
+      "RearLeftFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_RL] * 100"
+      },
+      "RearRightFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_RR] * 100"
+      },
+      "ForceFrequencies": true,
+      "FrontLeftFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.Freq_FL]"
+      },
+      "FrontRightFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.Freq_FR]"
+      },
+      "RearLeftFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.Freq_RL]"
+      },
+      "RearRightFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.Freq_RR]"
+      },
+      "AlwaysExecute": false,
+      "ContainerId": "562513bf-ff5b-4e38-8673-d7740c4264bf",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.0,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 5,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": false,
+        "HighFrequency": 50,
+        "WhiteNoise": 10,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "ToneOutput"
+      }
+    },
+    {
+      "ContainerType": "CustomEffectContainer",
+      "IsEnabled": true,
+      "Gain": 90.0,
+      "Description": "Custom-Slip-Calc-Flat-5th",
+      "FrontLeftFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_FL] * 65"
+      },
+      "FrontRightFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_FL] * 65"
+      },
+      "RearLeftFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_FL] * 65"
+      },
+      "RearRightFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.PrimaryAmp_FL] * 65"
+      },
+      "ForceFrequencies": true,
+      "FrontLeftFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.HarmFreq_FL_1]"
+      },
+      "FrontRightFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.HarmFreq_FR_1]"
+      },
+      "RearLeftFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.HarmFreq_RL_1]"
+      },
+      "RearRightFrequencyFormula": {
+        "Expression": "[DataCorePlugin.ExternalScript.HarmFreq_RR_1]"
+      },
+      "AlwaysExecute": false,
+      "ContainerId": "40ed79b2-d759-40e9-9b54-a8bcd5021514",
+      "AggregationMode": "Front/Rear",
+      "Filter": {
+        "GammaValue": 1.0,
+        "InputGain": 100.0,
+        "MinimumForce": 0,
+        "Threshold": 0,
+        "FilterType": "GammaFilter"
+      },
+      "Output": {
+        "UseHighFrequency": false,
+        "HighFrequency": 50,
+        "WhiteNoise": 10,
+        "UseWhiteNoise": false,
+        "FrequencyBasedOnPreFilter": false,
+        "UsePrehemptiveMode": false,
+        "Frequency": 44,
+        "OutputType": "ToneOutput"
+      }
+    }
+  ],
+  "AutoCalibrationRatio2": 100,
+  "OutputMode": 1,
+  "GlobalGain": 50.0,
+  "UseProfileGain": false,
+  "LastLoaded": "0001-01-01T00:00:00",
+  "Name": "Assetto Corsa EVO",
+  "ProfileId": "c6357585-fe07-4b02-a076-b6bb98ac8dc5",
+  "GameCode": "AssettoCorsaEVO",
+  "CarChoice": null
+}
